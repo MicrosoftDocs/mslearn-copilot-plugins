@@ -1,3 +1,8 @@
+# Sample plugins that use OpenAI schema for Microsoft Copilot
+
+This repository contains sample plugins that use OpenAI schema for Microsoft Copilot. The plugins in this repository are used in the [Plugins for Microsoft Copilot documentation](https://learn.microsoft.com/copilot-plugins/).
+
+Each folder in this repository contains a sample plugin.
 
 # Contributing
 
