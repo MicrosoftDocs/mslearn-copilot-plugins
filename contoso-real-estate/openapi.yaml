@@ -1,0 +1,94 @@
+openapi: 3.0.1
+info:
+  title: Contoso Real Estate API
+  description: Find up to date and detailed real-estate properties for sale on the market
+  version: 0.1.0
+servers:
+  - url: https://localhost:8080
+paths:
+  /get-listings:
+    get:
+      operationId: getListings
+      summary: Get a list of properties matching the specified criteria
+      description: Returns a list of properties, optionally filtered by providing the city, number of bedrooms, number of bathrooms and a list of amenities as query parameters
+      parameters:
+        - name: city
+          in: query
+          description: The city to search in
+          required: false
+          schema:
+            type: string
+        - name: bedrooms
+          in: query
+          description: The number of bedrooms
+          required: false
+          schema:
+            type: integer
+        - name: bathrooms
+          in: query
+          description: The number of bathrooms
+          required: false
+          schema:
+            type: integer
+        - name: amenities
+          in: query
+          description: The list of amenities
+          required: false
+          schema:
+            $ref: '#/components/schemas/AmenitiesEnum'
+      responses:
+        '200':
+          description: OK - Returns a list of properties
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Property'
+components:
+  schemas:
+    AmenitiesEnum:
+      type: string
+      enum:
+        - air conditioning
+        - balcony
+        - dishwasher
+        - elevator
+        - fireplace
+        - furniture
+        - garden
+        - gym
+        - heating
+        - jacuzzi
+        - laundry room
+        - microwave
+        - no furniture
+        - parking
+        - patio
+        - sauna
+        - swimming pool
+        - terrace
+        - wi-fi
+    Property:
+      type: object
+      properties:
+        title:
+          type: string
+          description: The title of the property listing
+        city:
+          type: string
+          description: The city of the property
+        bedrooms:
+          type: integer
+          description: The number of bedrooms
+        bathrooms:
+          type: integer
+          description: The number of bathrooms
+        amenities:
+          type: array
+          description: The list of amenities
+          items:
+            $ref: '#/components/schemas/AmenitiesEnum'
+        description:
+          type: string
+          description: The description of the property
