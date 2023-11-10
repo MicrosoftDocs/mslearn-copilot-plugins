@@ -1,3 +1,16 @@
+---
+page_type: sample
+languages:
+- yaml
+- json
+- js
+products:
+- microsoft-copilot
+name: "Contoso Real-Estate plugin for Microsoft Copilot"
+description: "A tutorial to learn how to build a sample plugin that uses OpenAI schema for Microsoft Copilot"
+urlFragment: "contoso-real-estate-plugin-for-microsoft-copilot"
+---
+
 # Contoso Real-Estate plugin
 
 A tutorial to learn how to build this sample plugin can be found at [Get started building plugins for Microsoft Copilot](https://learn.microsoft.com/copilot-plugins/get-started).
