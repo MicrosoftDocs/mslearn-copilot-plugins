@@ -6,7 +6,7 @@ import cors from "cors";
 const app = express();
 app.use(cors({ origin: "https://www.bing.com" }));
 
-app.get("/get-listings", function (req, res) {
+app.get("/get-listings", (req, res) => {
   const city = req.query.city;
   const bedrooms = parseInt(req.query.bedrooms);
   const bathrooms = parseInt(req.query.bathrooms);
@@ -20,15 +20,15 @@ app.get("/get-listings", function (req, res) {
   }
 });
 
-app.get("/openapi.yaml", function (req, res) {
+app.get("/openapi.yaml", (req, res) => {
   res.sendFile(path.resolve() + "/openapi.yaml");
 });
 
-app.get("/.well-known/ai-plugin.json", function (req, res) {
+app.get("/.well-known/ai-plugin.json", (req, res) => {
   res.sendFile(path.resolve() + "/ai-plugin.json");
 });
 
-app.get("/logo.png", function (req, res) {
+app.get("/logo.png", (req, res) => {
   res.sendFile(path.resolve() + "/logo.png");
 });
 
