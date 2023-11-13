@@ -6,16 +6,16 @@ languages:
 - js
 products:
 - microsoft-copilot
-name: "Contoso Real-Estate plugin for Microsoft Copilot"
+name: "Contoso real estate plugin for Microsoft Copilot"
 description: "A tutorial to learn how to build a sample plugin that uses OpenAI schema for Microsoft Copilot"
 urlFragment: "contoso-real-estate-plugin-for-microsoft-copilot"
 ---
 
-# Contoso Real-Estate plugin
+# Contoso real estate plugin
 
 A tutorial to learn how to build this sample plugin can be found at [Get started building plugins for Microsoft Copilot](https://learn.microsoft.com/copilot-plugins/get-started).
 
-This plugin finds properties for sale on the market. When users ask questions about real-estate properties, Microsoft Copilot can use this plugin to find properties with matching criteria. The plugin uses hard-coded data to return results.
+This plugin finds properties for sale on the market. When users ask questions about real estate properties, Microsoft Copilot can use this plugin to find properties with matching criteria. The plugin uses hard-coded data to return results.
 
 ## Local development
 

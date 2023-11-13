@@ -1,10 +1,10 @@
 openapi: 3.0.1
 info:
   title: Contoso Real Estate API
-  description: Find up to date and detailed real-estate properties for sale on the market
+  description: Find up to date and detailed real estate properties for sale on the market
   version: 0.1.0
 servers:
-  - url: https://localhost:8080
+  - url: http://localhost:8080
 paths:
   /get-listings:
     get:
