@@ -5,13 +5,14 @@ languages:
 - json
 - js
 products:
-- microsoft-copilot
+- copilot
+- ms-copilot
 name: "Contoso real estate plugin for Microsoft Copilot"
-description: "A tutorial to learn how to build a sample plugin that uses OpenAI schema for Microsoft Copilot"
+description: "A tutorial to learn how to build a plugin that uses OpenAI schema for Microsoft Copilot"
 urlFragment: "contoso-real-estate-plugin-for-microsoft-copilot"
 ---
 
-# Contoso real estate plugin
+# Learn to build a plugin that uses OpenAI schema for Microsoft Copilot - Contoso real estate
 
 A tutorial to learn how to build this sample plugin can be found at [Get started building plugins for Microsoft Copilot](https://learn.microsoft.com/copilot-plugins/get-started).
 
@@ -27,4 +28,4 @@ This plugin finds properties for sale on the market. When users ask questions ab
 
 ## Testing the plugin
 
-Sideload the plugin in Copilot in Bing by following the instructions in [Sideload and test plugins](https://learn.microsoft.com/copilot-plugins/test-debug/sideload-test-plugins).
+Sideload the plugin in Bing [bing.com/chat](https://bing.com/chat) by following the instructions in [Sideload and test plugins (Private Preview)](https://learn.microsoft.com/copilot-plugins/test-debug/sideload-test-plugins).
