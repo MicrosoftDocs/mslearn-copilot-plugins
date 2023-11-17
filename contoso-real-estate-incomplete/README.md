@@ -107,7 +107,7 @@ Use Microsoft Copilot to help you generate the text content for your OpenAPI spe
        get:
          operationId: getListings
          summary: "Get a list of properties for sale that match the specified criteria"
-      description: "Returns a list of properties, optionally filtered by providing the city, number of    bedrooms, number of bathrooms and a list of amenities as query parameters."
+         description: "Returns a list of properties, optionally filtered by providing the city, number of bedrooms, number of bathrooms and a list of amenities as query parameters."
          parameters:
            - name: "city"
              in: "query"
