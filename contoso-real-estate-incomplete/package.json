@@ -2,6 +2,6 @@
   "name": "contoso-real-estate-api",
   "type": "module",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.19.2"
   }
 }
