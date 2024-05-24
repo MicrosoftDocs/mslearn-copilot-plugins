@@ -215,7 +215,7 @@ To create a manifest file:
 
    Replace `http://abcde-fghijk-abc123def456-8080.app.github.dev/` with the URL you copied from the **Ports** panel.
 
-   The properties used in the code snippet above are documented in [Get started building an API plugin for Microsoft Copilot](https://learn.microsoft.com/copilot-plugins/get-started#create-the-plugin-manifest)
+   The properties that are used in the above manifest code are documented in [Plugin manifest fields](https://learn.microsoft.com/copilot/plugins/overview#plugin-manifest-fields) in _Overview of API plugins for Microsoft Copilot_.
 
 ## Make the plugin manifest available on your server
 
