@@ -15,7 +15,7 @@ urlFragment: "contoso-real-estate-plugin-for-microsoft-copilot"
 
 A tutorial to learn how to build this sample API plugin can be found at [Get started building an API plugin for Microsoft Copilot](https://learn.microsoft.com/copilot-plugins/get-started).
 
-This API plugin finds properties for sale on the market. When the user asks questions about real estate properties, Microsoft Copilot can use this plugin to find properties that have matching criteria. The plugin uses hard-coded data to return results.
+This API plugin finds properties for sale on the market. When the user asks a question about real estate properties, Microsoft Copilot can use this plugin to find properties that have matching criteria. The plugin uses hard-coded data to return results.
 
 ## Local development
 
