@@ -27,4 +27,4 @@ This API plugin finds properties for sale on the market. When the user asks a qu
 
 ## Testing the plugin
 
-Sideload the plugin in Bing [bing.com/chat](https://bing.com/chat) by following the instructions in [Test and debug an API plugin](https://learn.microsoft.com/copilot-plugins/test-debug/sideload-test-plugins).
+To use and test this API plugin in Copilot in Bing, see [Test and debug an API plugin](https://learn.microsoft.com/copilot-plugins/test-debug/sideload-test-plugins).
