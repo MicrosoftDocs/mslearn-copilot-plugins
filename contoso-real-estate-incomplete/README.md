@@ -1,10 +1,10 @@
-# Learn to build a plugin that uses OpenAI schema for Microsoft Copilot - INCOMPLETE Contoso real estate plugin
+# Learn to build an API plugin for Microsoft Copilot - INCOMPLETE Contoso real estate plugin
 
-This directory contains an incomplete sample plugin for Microsoft Copilot. The complete sample can be found in the `contoso-real-estate` directory instead.
+This directory contains an incomplete sample API plugin for Microsoft Copilot. The complete sample can be found in the `contoso-real-estate` directory instead.
 
-Use this sample as a starting point to build your own plugin that uses OpenAI schema for Microsoft Copilot.
+Use this sample as a starting point to build your own API plugin for Microsoft Copilot.
 
-To learn to build a plugin from scratch, follow the tutorial [Get started building plugins for Microsoft Copilot](https://learn.microsoft.com/copilot-plugins/get-started).
+To learn to build a plugin from scratch, see [Get started building an API plugin for Microsoft Copilot](https://learn.microsoft.com/copilot-plugins/get-started).
 
 To learn to build a plugin by starting from this incomplete sample, follow the steps below.
 
@@ -46,7 +46,7 @@ Your API endpoint is ready.
 
 ## Write the API specification
 
-Building plugins that use OpenAI schema for Microsoft Copilot requires 3 things:
+Building an API plugin for Microsoft Copilot requires three things:
 
 * An API, which you now have.
 * An API specification file.
@@ -56,7 +56,7 @@ Let's create the API specification file.
 
 The goal of the API specification file is to document your API. Microsoft Copilot needs to know where the API is, and what requests your API can handle. It needs to know how to send request parameters, and how to read responses. The API spec is a way for the LLM that powers Microsoft Copilot to know how to use your API.
 
-To document your API, write a specification that follows the OpenAPI schema. Most APIs use the OpenAPI schema. It's a standard way to document APIs for people and computers to know how to access APIs.
+To document your API, write a specification that follows the OpenAPI<!-- todo: global: check usage of "OpenAPI" --> schema. Most APIs use the OpenAPI schema. It's a standard way to document APIs for people and computers to know how to access APIs.
 
 Use Microsoft Copilot to help you generate the text content for your OpenAPI specification:
 
@@ -215,7 +215,7 @@ To create a manifest file:
 
    Replace `http://abcde-fghijk-abc123def456-8080.app.github.dev/` with the URL you copied from the **Ports** panel.
 
-   The properties used in the code snippet above are documented in [Get started building Plugins for Microsoft Copilot](https://learn.microsoft.com/copilot-plugins/get-started#create-your-plugins-manifest-file)
+   The properties used in the code snippet above are documented in [Get started building an API plugin for Microsoft Copilot](https://learn.microsoft.com/copilot-plugins/get-started#create-the-plugin-manifest)
 
 ## Make the plugin manifest available on your server
 
@@ -241,7 +241,7 @@ Microsoft Copilot needs to have access to the plugin manifest file for your plug
 
 1. Restart your server. To do this, in the **Terminal** panel, press <kbd>Ctrl+C</kbd>, type `node server.js`, and then press <kbd>Enter</kbd>.
 
-1. In a new tab, open the URL where your server is running, and add `.well-known/ai-plugin.json` at the end of the URL. Press <kbd>Enter</kbd>. The pluginb manifest file is displayed.
+1. In a new tab, open the URL where your server is running, and add `.well-known/ai-plugin.json` at the end of the URL. Press <kbd>Enter</kbd>. The plugin manifest file is displayed.
 
 Your plugin is ready and you can now sideload it in Microsoft Copilot.
 
@@ -271,4 +271,4 @@ To test your plugin, you sideload it in Bing. But, for Bing to be able to access
 
 **Sideloading plugins in Copilot in Bing is in private preview and is not broadly available yet. The user interface and the steps in this guide may change during the preview period.**
 
-To sideload your plugin, follow the steps at [Sideload your plugin in Copilot in Bing](https://learn.microsoft.com/copilot-plugins/test-debug/sideload-test-plugins#sideload-your-plugin-in-copilot-in-bing)
+To use and test your plugin, see [Sideload your API plugin in Copilot in Bing](https://learn.microsoft.com/copilot/plugins/test-debug/sideload-test-plugins#sideload-your-api-plugin-in-copilot-in-bing) in _Test and debug an API plugin_.
