@@ -20,9 +20,9 @@ This API plugin finds properties for sale on the market. When the user asks a qu
 ## Local development
 
 1.  Clone this repository.
-1.  At a command prompt, change to the `contoso-real-estate` directory: `cd contoso-real-estate`.
-1.  Run `npm install` to install dependencies.
-1.  Start the server with `node server.js`. The server starts on port `8080`.
+1.  At a command prompt, enter `cd contoso-real-estate` to change to this sample's directory.
+1.  Enter `npm install` to install dependencies.
+1.  Enter `node server.js` to start the server. The server starts on port `8080`.
 1.  Test the API, such as by sending a request to `http://localhost:8080/get-listings?city=Paris&bedrooms=3`.
 
 ## Testing the plugin
