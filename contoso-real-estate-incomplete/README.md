@@ -56,7 +56,7 @@ Let's create the API specification file.
 
 The goal of the API specification file is to document your API. Microsoft Copilot needs to know where the API is, and what requests your API can handle. It needs to know how to send request parameters, and how to read responses. The API spec is a way for the LLM that powers Microsoft Copilot to know how to use your API.
 
-To document your API, write a specification that follows the OpenAPI<!-- todo: global: check usage of "OpenAPI" --> schema. Most APIs use the OpenAPI schema. It's a standard way to document APIs for people and computers to know how to access APIs.
+To document your API, write a specification that follows the OpenAPI schema. Most APIs use the OpenAPI schema. It's a standard way to document APIs for people and computers to know how to access APIs.
 
 Use Microsoft Copilot to help you generate the text content for your OpenAPI specification:
 
